@@ -7,8 +7,7 @@
 ![screenshot](Screen Shot.png)
 
 
-## Description
- This week's code review must include:
+## Description:
 
 
 ## Setup/Installation Requirements
