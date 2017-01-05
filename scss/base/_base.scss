@@ -33,7 +33,60 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+  background-color: darkslategrey;
+}
+
+h1,h2 {
+  font-family: 'Playfair Display', 'Gill Sans', sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+p {
+  font-family: 'Playfair Display', 'Gill Sans', sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
 //Class Selectors
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  .logo {
+    display: flex;
+    justify-content: center;
+    background-color: darken(seagreen, 20%);
+    padding: 40px 25px;
+    border-radius: 100%;
+
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+      background-color: lighten(seagreen, 30%);
+      font-size: 1.2em;
+      margin: 5px;
+      padding: 10px;
+    }
+  }
+}
 
 //ID selectors
+
+#hero-text {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: seagreen;
+  text-align: center;
+}
