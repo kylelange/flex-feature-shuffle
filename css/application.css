@@ -59,7 +59,8 @@ p {
     display: flex;
     justify-content: center;
     background-color: #561493;
-    padding: 40px 25px;
+    border: 2px solid #d4b2f4;
+    padding: 60px 45px;
     border-radius: 100%; }
   .nav .links {
     display: flex;
@@ -70,24 +71,50 @@ p {
       background-color: #d4b2f4;
       font-size: 1.2em;
       margin: 5px;
-      padding: 10px; }
+      padding: 7px;
+      border: 2px solid #561493; }
 
-.main {
+.section {
   display: flex;
   justify-content: center;
   margin-top: 40px; }
-  .main h1 {
+  .section h1 {
     background-color: blueviolet;
     width: 80%;
     height: 80px;
     text-align: center;
     padding: 20px; }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px; }
+  .container .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto; }
+    .container .tile .img {
+      background-color: #d4b2f4;
+      width: 200px;
+      height: 200px; }
+    .container .tile .copy {
+      margin-top: 10px; }
+      .container .tile .copy .headline {
+        margin-top: 10px; }
+      .container .tile .copy .text {
+        width: 100%;
+        height: auto;
+        margin-top: 10px; }
+
 #hero-text {
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: blueviolet;
   text-align: center; }
 

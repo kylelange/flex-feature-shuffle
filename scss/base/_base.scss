@@ -61,7 +61,8 @@ p {
     display: flex;
     justify-content: center;
     background-color: darken(blueviolet, 20%);
-    padding: 40px 25px;
+    border: 2px solid lighten(blueviolet, 30%);
+    padding: 60px 45px;
     border-radius: 100%;
 
   }
@@ -75,12 +76,13 @@ p {
       background-color: lighten(blueviolet, 30%);
       font-size: 1.2em;
       margin: 5px;
-      padding: 10px;
+      padding: 7px;
+      border: 2px solid darken(blueviolet, 20%);
     }
   }
 }
 
-.main {
+.section {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -93,13 +95,44 @@ p {
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    .img {
+      background-color: lighten(blueviolet, 30%);
+      width: 200px;
+      height: 200px;
+    }
+    .copy {
+      margin-top: 10px;
+      .headline {
+        margin-top: 10px
+      }
+      .text {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
 //ID selectors
 
 #hero-text {
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: blueviolet;
   text-align: center;
 }
