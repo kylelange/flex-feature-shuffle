@@ -60,7 +60,7 @@ p {
   .logo {
     display: flex;
     justify-content: center;
-    background-color: darken(seagreen, 20%);
+    background-color: darken(blueviolet, 20%);
     padding: 40px 25px;
     border-radius: 100%;
 
@@ -72,11 +72,24 @@ p {
     align-items: center;
 
     h2 {
-      background-color: lighten(seagreen, 30%);
+      background-color: lighten(blueviolet, 30%);
       font-size: 1.2em;
       margin: 5px;
       padding: 10px;
     }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  h1 {
+    background-color: blueviolet;
+    width: 80%;
+    height: 80px;
+    text-align: center;
+    padding: 20px
   }
 }
 
@@ -87,6 +100,6 @@ p {
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  background-color: seagreen;
+  background-color: blueviolet;
   text-align: center;
 }

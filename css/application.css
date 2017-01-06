@@ -58,7 +58,7 @@ p {
   .nav .logo {
     display: flex;
     justify-content: center;
-    background-color: #153e27;
+    background-color: #561493;
     padding: 40px 25px;
     border-radius: 100%; }
   .nav .links {
@@ -67,17 +67,28 @@ p {
     justify-content: space-around;
     align-items: center; }
     .nav .links h2 {
-      background-color: #7ed4a4;
+      background-color: #d4b2f4;
       font-size: 1.2em;
       margin: 5px;
       padding: 10px; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; }
+  .main h1 {
+    background-color: blueviolet;
+    width: 80%;
+    height: 80px;
+    text-align: center;
+    padding: 20px; }
 
 #hero-text {
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  background-color: seagreen;
+  background-color: blueviolet;
   text-align: center; }
 
 /*# sourceMappingURL=application.css.map */
