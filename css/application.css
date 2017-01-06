@@ -103,16 +103,29 @@ p {
     @media only screen and (max-width: 991px) {
       .container article[class^="tile"] {
         flex-direction: row;
-        width: 90%; } }
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 20px; } }
     .container article[class^="tile"] .img {
       background-color: #d4b2f4;
       width: 200px;
-      height: 200px; }
+      height: 200px;
+      min-width: 200px; }
+      @media only screen and (max-width: 767px) {
+        .container article[class^="tile"] .img {
+          display: none; } }
     .container article[class^="tile"] .copy {
       margin-top: 10px; }
+      @media only screen and (max-width: 991px) {
+        .container article[class^="tile"] .copy {
+          width: 75%;
+          padding-left: 50px; } }
       .container article[class^="tile"] .copy .headline {
         margin-top: 10px;
         text-align: center; }
+        @media only screen and (max-width: 991px) {
+          .container article[class^="tile"] .copy .headline {
+            text-align: inherit; } }
       .container article[class^="tile"] .copy p {
         width: 100%;
         height: auto;
@@ -120,7 +133,10 @@ p {
         margin-bottom: 50px; }
   @media only screen and (max-width: 991px) {
     .container #tile2 {
-      flex-direction: row-reverse; } }
+      flex-direction: row-reverse; }
+      .container #tile2 .copy {
+        padding-right: 50px;
+        padding-left: 0px; } }
 
 #hero-text {
   width: 80%;
