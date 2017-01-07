@@ -1,14 +1,33 @@
-# _App Name_
+# _Flex ONLY Feature Shuffle Template_
 
-#### _{A responsive site + short desc.}, {Jan 1, 2017}_
+#### _{A responsive site using flexbox instead of a grid}, {Jan 6, 2017}_
 
 #### By _**Kyle Lange**_
 
-![screenshot](Screen Shot.png)
+### See it [live here.](http://codepen.io/kylelange/pen/ZLGJLb)
 
+![screenshot](Screenshot1.png)
+![screenshot](Screenshot2.png)
+![screenshot](Screenshot3.png)
 
 ## Description:
 
+This pen is a FLEXBOX ONLY template for a site with an image/icon feature shuffle.  Content is also hidden/rearranged at different screen sizes.  It was created without a gird and can be used for all web needs.
+
+idea from CMV Blog [here:](https://codemyviews.com/blog/5-really-useful-responsive-web-design-patterns)
+
+Need vendor prefixes with this template?
+
+Atom:
+
+1. in git:
+
+
+    $ apm install autoprefixer
+
+2. press cmd+shift+p to pull up the command palette.
+
+3. type in [autoprefixer](https://atom.io/packages/command-palette) in the window provided at the top. The program will auto complete all vendor prefixes known as of the most current release.
 
 ## Setup/Installation Requirements
 
@@ -28,14 +47,6 @@
 
            _sudo gem install sass_
 
-   Then:
-
-         _gem install bourbon && gem install neat_
-
-   Finally:
-
-         _bourbon install && neat install_
-
  5. Watch your Sass project/ make changes with:
 
          _sass --watch scss:css_
@@ -53,7 +64,6 @@ For questions or comments, please __email  [Kyle here.](baronsintrees@gmail.com)
 
 * HTML5
 * CSS3 with Sass, Bourbon and Neat
-* JavaScript with jQuery 3.1
 
 ### License
 
