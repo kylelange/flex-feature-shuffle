@@ -104,6 +104,9 @@ p {
   @media only screen and (max-width: 991px) {
     flex-wrap: wrap;
   }
+  @media only screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
   article[class^="tile"] {
     display: flex;
     flex-direction: column;
@@ -130,6 +133,10 @@ p {
       @media only screen and (max-width: 991px) {
         width: 75%;
         padding-left: 50px;
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          padding: 0px;
+        }
       }
       .headline {
         margin-top: 10px;
@@ -143,8 +150,9 @@ p {
         height: auto;
         margin-top: 10px;
         margin-bottom: 50px;
-        @media only screen and (max-width: 991px) {
-
+        @media only screen and (max-width: 767px) {
+          font-size: 1.1em;
+          text-align: justify;
         }
       }
     }
@@ -154,7 +162,13 @@ p {
       flex-direction: row-reverse;
       .copy {
         padding-right: 50px;
-        padding-left: 0px
+        padding-left: 0px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      flex-direction: row;
+      .copy {
+        padding: 0px;
       }
     }
   }

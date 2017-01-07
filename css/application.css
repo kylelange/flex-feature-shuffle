@@ -94,6 +94,9 @@ p {
   @media only screen and (max-width: 991px) {
     .container {
       flex-wrap: wrap; } }
+  @media only screen and (max-width: 767px) {
+    .container {
+      margin-top: 0px; } }
   .container article[class^="tile"] {
     display: flex;
     flex-direction: column;
@@ -120,6 +123,11 @@ p {
         .container article[class^="tile"] .copy {
           width: 75%;
           padding-left: 50px; } }
+  @media only screen and (max-width: 991px) and (max-width: 767px) {
+    .container article[class^="tile"] .copy {
+      width: 100%;
+      padding: 0px; } }
+
       .container article[class^="tile"] .copy .headline {
         margin-top: 10px;
         text-align: center; }
@@ -131,12 +139,21 @@ p {
         height: auto;
         margin-top: 10px;
         margin-bottom: 50px; }
+        @media only screen and (max-width: 767px) {
+          .container article[class^="tile"] .copy p {
+            font-size: 1.1em;
+            text-align: justify; } }
   @media only screen and (max-width: 991px) {
     .container #tile2 {
       flex-direction: row-reverse; }
       .container #tile2 .copy {
         padding-right: 50px;
         padding-left: 0px; } }
+  @media only screen and (max-width: 767px) {
+    .container #tile2 {
+      flex-direction: row; }
+      .container #tile2 .copy {
+        padding: 0px; } }
 
 #hero-text {
   width: 80%;
